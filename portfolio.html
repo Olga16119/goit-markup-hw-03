@@ -10,24 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-
     <!-- шапка сайта -->
-    <header class="header">
-        <nav>
-            <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-            <ul class="nav-list list">
-                <li><a class="nav-item link" href="./index.html">Studio</a> </li>
-                <li><a class="nav-item link current" href="./portfolio.html">Portfolio</a> </li>
+<header class="header border">
+    <div class="container navigation">
+        <nav class="nav-list">
+            <a class="logo link" href="">Web<span class="logo-header">Studio</span></a>
+            <ul class="nav-set">
+                <li><a class="nav-item link current" href="./index.html">Studio</a> </li>
+                <li><a class="nav-item link" href="./portfolio.html">Portfolio</a> </li>
                 <li><a class="nav-item link" href="">Contacts</a> </li>
             </ul>
         </nav>
 
         <address class="address">
-            <ul class="adress-list">
+            <ul class="address-list">
                 <li>
                     <a class="address-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
@@ -36,79 +37,109 @@
                 </li>
             </ul>
         </address>
-    </header>
+    </div>
+</header>
 
     <main>
  <!-- фильтр -->
  <section class="projects">
-    <h1 hidden class="projects-title">Our projects</h1>
-    <ul class="projects-filters">
-        <li >
-            <button type="button" class="btn-project">All</button></li>
-        <li >
-            <button type="button" class="btn-project">Web Site</button></li>
-        <li >
-            <button type="button" class="btn-project">App</button></li>
-        <li >
-            <button type="button" class="btn-project">Design</button></li>
-        <li >
-            <button type="button" class="btn-project">Marketing</button></li>
-    </ul>
- 
-    <ul class="projects-list">
-        <li>
-            <img class="project-img" src="./images/portf1.jpg" alt="banking app images" width="360" height="300">
-            <h2  class="title">Banking App Interface Concept</h2>
-            <p class="project-txt">App</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf2.jpg" alt="text on blue background" width="360" height="300">
-            <h2  class="title">Cashless Payment</h2>
-            <p class="project-txt">Marketing</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf3.jpg" alt="laptop and smartphone" width="360" height="300">
-            <h2  class="title">Meditaion App</h2>
-            <p class="project-txt">App</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf4.jpg" alt="driver at the wheel" width="360" height="300">
-            <h2  class="title">Taxi Service</h2>
-            <p class="project-txt">Marketing</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf5.jpg" alt="phone themes" width="360" height="300">
-            <h2  class="title">Screen Illustrations</h2>
-            <p class="project-txt">Design</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf6.jpg" alt="girl with smartphone" width="360" height="300">
-            <h2  class="title">Online Courses</h2>
-            <p class="project-txt">Marketing</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf7.jpg" alt="instagram pages" width="360" height="300">
-            <h2  class="title">Instagram Stories Concept</h2>
-            <p class="project-txt">Design</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf8.jpg" alt="fruits in a bag" width="360" height="300">
-            <h2  class="title">Organic Food</h2>
-            <p class="project-txt">Web Site</p>
-        </li>
-        <li>
-            <img class="project-img" src="./images/portf9.jpg" alt="a cup of coffee" width="360" height="300">
-            <h2  class="title">Fresh Coffee</h2>
-            <p class="project-txt">Web Site</p>
-        </li>
-    </ul>
+    <div class="container">
+        <h1 hidden class="projects-title">Our projects</h1>
+        <ul class="projects-filters">
+            <li >
+                <button type="button" class="btn-project">All</button></li>
+            <li >
+                <button type="button" class="btn-project">Web Site</button></li>
+            <li >
+                <button type="button" class="btn-project">App</button></li>
+            <li >
+                <button type="button" class="btn-project">Design</button></li>
+            <li >
+                <button type="button" class="btn-project">Marketing</button></li>
+        </ul>
+        <ul class="projects-list">
+            <li class="project-item ">
+                <img class="project-img" src="./images/portf1.jpg" alt="banking app images" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Banking App Interface Concept</h2>
+                    <p class="project-txt">App</p>
+                </div>
+            </li>
+
+            <li class="project-item  ">
+                <img class="project-img" src="./images/portf2.jpg" alt="text on blue background" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Cashless Payment</h2>
+                    <p class="project-txt">Marketing</p>
+                </div>
+            </li>
+
+            <li class="project-item  ">
+                <img class="project-img" src="./images/portf3.jpg" alt="laptop and smartphone" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Meditaion App</h2>
+                    <p class="project-txt">App</p>
+                </div>
+            </li>
+
+            <li class="project-item  ">
+                <img class="project-img" src="./images/portf4.jpg" alt="driver at the wheel" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Taxi Service</h2>
+                    <p class="project-txt">Marketing</p>
+                </div>
+            </li>
+
+            <li class="project-item ">
+                <img class="project-img" src="./images/portf5.jpg" alt="phone themes" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Screen Illustrations</h2>
+                    <p class="project-txt">Design</p>
+                </div>
+            </li>
+
+            <li class="project-item   ">
+                <img class="project-img" src="./images/portf6.jpg" alt="girl with smartphone" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Online Courses</h2>
+                    <p class="project-txt">Marketing</p>
+                </div>
+            </li>
+
+            <li class="project-item  ">
+                <img class="project-img" src="./images/portf7.jpg" alt="instagram pages" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Instagram Stories Concept</h2>
+                    <p class="project-txt">Design</p>
+                </div>
+            </li>
+
+            <li class="project-item  ">
+                <img class="project-img" src="./images/portf8.jpg" alt="fruits in a bag" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Organic Food</h2>
+                    <p class="project-txt">Web Site</p>
+                </div>
+            </li>
+
+            <li class="project-item  ">
+                <img class="project-img" src="./images/portf9.jpg" alt="a cup of coffee" width="360" height="300">
+                <div class="project-border">
+                    <h2  class="title name">Fresh Coffee</h2>
+                    <p class="project-txt">Web Site</p>
+                </div>
+            </li>
+        </ul>
+    </div>
  </section>
 </main>
     <!--Footer  -->
     <footer class="footer">
-        <a class="logo link" href="">Web<span class="logo-footer">Studio</span></a>
-        <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <div class="container">
+            <a class="logo link" href="">Web<span class="logo-footer">Studio</span></a>
+            <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing &
+                growth solutions.</p>
     </footer>
+    </div>
 </body>
-
 </html>
